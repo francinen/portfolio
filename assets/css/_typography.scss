@@ -1,0 +1,27 @@
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	padding: 0;
+}
+
+$fontStack: 'Lato','Open Sans', Helvetica, Arial, Sans-Serif;
+$mainHeader: #49c0ea;
+$subHeader: #aabd6c;
+$nav: #989898;
+
+@mixin fontStackThin {
+	font-family: $fontStack;
+	font-weight: 100;
+}
+
+@mixin fontStackLight {
+	font-family: $fontStack;
+	font-weight: 300;
+}
+
+@mixin fontStackReg {
+	font-family: $fontStack;
+	font-weight: 400;
+}
+
+
+

@@ -1,0 +1,32 @@
+.work {
+	margin-bottom: 100px;
+	h3 {
+		font-size: 1.4em;
+	}
+	p {
+		font-size: 1em;
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		width: auto;
+		&:first-child {
+			margin-right: 40px;
+		}
+	}
+
+}
+.thumb {
+	width: auto;
+	display: inline-block;
+	margin-right: 50px;
+}
+.details {
+	position: relative;
+	top: -30px;
+	width: 70%;
+	display: inline-block;
+}
+
