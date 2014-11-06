@@ -1,3 +1,14 @@
+@mixin contactHover($color) {
+	&:hover {
+		background: lighten($color,5);
+		cursor: pointer;
+	}
+	&:hover svg {
+		fill: darken($color,5);
+		cursor: pointer;
+	}
+}
+
 header {
 	text-align: center;
 	background: #fff;
@@ -19,7 +30,7 @@ header {
 }
 
 nav {
-	@include fontStackLight;
+	@include fontStackReg;
 	ul {
 		text-align: center;
 		padding: 0;
@@ -32,6 +43,16 @@ nav {
 		position: relative;
 		color: $nav;
 		font-size: 16px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	li:hover,
+	li.open {
+		color: $link;
+	}
+	li.open {
+		cursor: default;
 	}
 	li:first-child {
 		margin-right: 130px;
@@ -78,3 +99,127 @@ nav {
 	}
 
 }
+
+.about {
+	text-align: center;
+	// border: 1px solid red;
+	div {
+		text-align: left;
+		margin: 0 auto;
+		width: 95%;
+	}
+	div.mySkills {
+		margin-top: 40px;
+	}
+	div.selfTaught {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	div.wantToLearn {
+		margin-bottom: 40px;
+	}
+	// div.mySkills,
+	// div.wantToLearn,
+	// div.otherOutlets {
+	// 	width: 80%;
+	// 	margin: 0 auto;
+	// }
+	p {
+		font-size: $fontSize;
+	}
+	h3 {
+		float: left;
+		width: 20%;
+		// min-width: 132px;
+		@include fontStackReg;
+		font-size: $fontSize;
+		margin-right: 20px;
+	}
+	div.list {
+		float: left;
+		width: 70%;
+		margin: 0;
+		margin-bottom: 10px;
+		ul {
+			margin: 0;
+		}
+		li {
+			margin-right: 20px;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.about, 
+.contact {
+	ul {
+		padding: 0;
+		width: auto;
+		display: inline-block;
+	}
+	li {
+		@include navLists;
+		
+		@include fontStackLight;
+		font-size: $fontSize;
+		&:last-child {
+			margin-right: 0;
+		}	
+	}
+}
+
+.contact {
+	text-align: left;
+	ul {
+	margin: 0;
+	text-align: left;
+	}
+	li {
+		padding: 5px 10px;
+		color: #fff;
+		margin-right: 10px;
+	}
+	object {
+		margin-right: 5px;
+	}
+	.email {
+		background: $email;
+		svg {
+			fill: lighten($email,25);
+		}
+		@include contactHover($email);
+	}
+	.github {
+		background: $github;
+		svg {
+			fill: lighten($github,25);
+		}
+		@include contactHover($github);
+
+	}
+	.twitter {
+		background: $twitter;
+		svg {
+			fill: lighten($twitter,25);
+		}
+		@include contactHover($twitter);
+	}
+	.phone {
+		background: $phone;
+		svg {
+			fill: lighten($phone,25);
+		}
+		@include contactHover($phone);
+	}
+	object {
+		width: 20px;
+		height: 20px;
+		position: relative;
+		top: 3px;
+		display: inline-block;
+	}
+}
+
+@media all and (max-width: 1150px) {
+}
+	

@@ -1,0 +1,42 @@
+@media all and (max-width: 1090px) {
+	.about {
+		h3 {
+		width: 25%;
+		}
+		li {
+			margin-bottom: 10px;
+		
+		}
+	}
+}
+@media all and (max-width: 880px) {
+	.about { 
+		h3 {
+			width: 28%;
+		}
+		div.list {
+		width: 60%;
+		li {
+			margin-bottom: 10px;
+		}
+		}
+	}
+}
+
+@media all and (max-width: 780px) {
+	.about h3 {
+		width: 100%;
+	}
+	.about div.list {
+		width: 90%;
+		margin-left: 0;
+
+	}
+}
+
+@media all and (max-width: 660px) {
+	.about div.list {
+		width: 100%;
+		margin-top: 10px;
+	}
+}

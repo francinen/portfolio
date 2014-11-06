@@ -1,10 +1,10 @@
 .work {
 	margin-bottom: 100px;
 	h3 {
-		font-size: 1.4em;
-	}
-	p {
-		font-size: 1em;
+		@include fontStackReg;
+		font-size: $fontSize*1.2;
+		color: $mainHeader;
+
 	}
 	ul {
 		padding: 0;
@@ -12,6 +12,8 @@
 	li {
 		display: inline-block;
 		width: auto;
+		@include fontStackLight;
+		font-size: $fontSize*0.8;
 		&:first-child {
 			margin-right: 40px;
 		}
@@ -24,8 +26,6 @@
 	margin-right: 50px;
 }
 .details {
-	position: relative;
-	top: -30px;
 	width: 70%;
 	display: inline-block;
 }

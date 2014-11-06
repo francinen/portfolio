@@ -1,4 +1,4 @@
-
+$marginBottom: -20px;
 .wrapper {
 	width: 65%;
 	max-width: 1200px;
@@ -13,7 +13,13 @@ header {
 nav {
 	width: 90%;
 	margin: 0 auto;
-	padding: 20px 0 0;
+	padding: 20px 0 40px;
+}
+
+.about .wrapper, 
+.contact .wrapper {
+	@include column(8);
+	@include push(2);
 }
 
 .works {

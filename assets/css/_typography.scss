@@ -1,12 +1,14 @@
-h1,h2,h3,h4,h5,h6,p {
-	margin: 0;
-	padding: 0;
-}
 
 $fontStack: 'Lato','Open Sans', Helvetica, Arial, Sans-Serif;
+$fontSize: 1.2em;
 $mainHeader: #49c0ea;
 $subHeader: #aabd6c;
 $nav: #989898;
+$email: #b3be55;
+$phone: #4aabb5;
+$github: #c63c3b;
+$twitter: #2b5078;
+$link: #f07f13;
 
 @mixin fontStackThin {
 	font-family: $fontStack;
@@ -23,5 +25,24 @@ $nav: #989898;
 	font-weight: 400;
 }
 
+@mixin navLists {
+	list-style-type: none;
+	display: inline-block;
+}
 
+
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
+	letter-spacing: 0.6px;
+}
+
+
+p {
+	@include fontStackLight;
+	font-size: $fontSize;
+	margin-bottom: 15px;
+}
 

@@ -1,6 +1,11 @@
 img {
 	max-width: 100%;
 }
+
+object svg {
+	width: 100%;
+	height: 100%;
+}
 .work {
 	position: relative;
 	object {
@@ -8,12 +13,8 @@ img {
 		height: 150px;
 		position: absolute;
 		display: inline-block;
-		top: 0;
-		left:0;
 		z-index: 100;
 		svg {
-			width: 100%;
-			height: 100%;
 			fill: $nav;
 		}
 	}
