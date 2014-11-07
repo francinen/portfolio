@@ -1,3 +1,4 @@
+$buttonHeight: 70px;
 .work {
 	margin-bottom: 100px;
 	h3 {
@@ -19,15 +20,76 @@
 			margin-right: 40px;
 		}
 	}
-
+	a {
+		height: $buttonHeight;
+		@include fontStackLight;
+		font-size: $fontSize*0.8;
+		background: none;
+		border: none;
+		box-shadow: none;
+		color: $link;
+		text-decoration: none;
+	}
 }
 .thumb {
 	width: auto;
 	display: inline-block;
-	margin-right: 50px;
 }
 .details {
-	width: 70%;
 	display: inline-block;
+	position: relative;
+	z-index: 200;
+	@include column(5.5);
+	@include push(4);
 }
 
+
+
+
+
+// .work {
+// 	margin-bottom: 400px;
+// 	h3 {
+// 		@include fontStackReg;
+// 		font-size: $fontSize*1.2;
+// 		color: $mainHeader;
+
+// 	}
+// }
+// .thumb {
+// 	width: auto;
+// 	display: inline-block;
+// 	margin-right: 50px;
+// 	position: absolute;
+// 	top: 0;
+// 	left: -50px;
+// 	z-index: 1;
+// }
+// .details {
+// 	display: inline-block;
+// 	position: relative;
+// 	z-index: 200;
+// 	@include column(5.5);
+// 	margin-left: $d+70;
+// }
+
+// $buttonHeight: 70px;
+
+// a {
+// 	height: $buttonHeight;
+// 	@include fontStackLight;
+// 	font-size: $fontSize*0.8;
+// 	background: none;
+// 	border: none;
+// 	box-shadow: none;
+// 	color: $link;
+// }
+
+// object.screen {
+// 	width: $buttonHeight;
+// 	height: $buttonHeight/0.8;
+// 	display: inline-block;
+// }
+// object.screen + h4 {
+// 	display: inline-block;
+// }

@@ -1,13 +1,16 @@
+@media all and (max-width: 1095px) {
+	section.about .outerContainer {
+
+	}
+}
+
 @media all and (max-width: 1090px) {
-	.about {
-		h3 {
-		width: 25%;
-		}
+	
 		li {
 			margin-bottom: 10px;
 		
 		}
-	}
+	
 }
 @media all and (max-width: 880px) {
 	.about { 

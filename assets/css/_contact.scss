@@ -1,0 +1,232 @@
+$dimensions: 50px;
+.contact {
+	text-align: center;
+	margin-top: 30px;
+
+	ul {
+	margin: 0;
+	text-align: center;
+	padding: 0;
+	width: auto;
+	display: inline-block;
+	}
+	li {
+		padding: 5px 10px;
+		margin-right: 50px;
+		position: relative;
+		@include navLists;
+		@include fontStackLight;
+		font-size: $fontSize;
+		&:last-child {
+			margin-right: 0;
+		}	
+		h3 {
+			// font-size: $fontSize*0.6;
+			// letter-spacing: 0.5px;
+			// @include fontStackReg;
+			// letter-spacing: 1.2px;
+			display: none;
+		}
+	}
+	object {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		width: 30px;
+		height: 30px;
+		// margin: 0 auto;
+		// margin: 10px;
+
+	}
+	object:before,	object:after {
+		content:'';
+		// display: block;
+		width: $dimensions;
+		height: $dimensions;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		border: 1px solid $nav;
+		border-radius: 5px;
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		-webkit-transition: rotate 0.4s linear;
+		transition: rotate 0.4s linear;
+	}
+	object:before {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+			transform: rotate(0deg);
+
+	// -webkit-transform-origin: 50%;
+	// -moz-transform-origin: 50%;
+	// transform-origin: 50% 50%;
+	// -webkit-transition: rotate 1s linear;
+	// transition: rotate 1s linear;
+	}
+	object:after {
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+			transform: rotate(45deg);
+	// -webkit-transform-origin: 50%;
+	// -moz-transform-origin: 50%;
+	// transform-origin: 50% 50%;
+	// -webkit-transition: rotate 1s linear;
+	// transition: rotate 1s linear;
+	}
+	svg.icon {
+		position: absolute;
+		left: $dimensions/5;
+		top: $dimensions/5;
+		fill: lighten($nav,10);
+	}
+}
+
+// .icon {
+// 	-webkit-transform: scale(0.8);
+// 	transform: scale(0.8);
+// 	-webkit-transform-origin: 50%;
+// 	transform-origin: 50%;
+// }
+
+@mixin rotate {
+	@-webkit-keyframes rotate {
+		from {-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+	}
+		to {-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;}
+	}
+		@keyframes rotate {
+		from {-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+	}
+		to {-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;}
+	}
+}
+
+
+@mixin rotateSquare {
+	@-webkit-keyframes rotateSquare {
+		from {-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+	}
+		to {-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;}
+	}
+	@keyframes rotateSquare {
+		from {-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+	}
+		to {-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;}
+	}
+}
+
+.contact a {
+	&:hover object:after {
+		position: absolute;
+		-webkit-animation: rotate 0.4s linear;
+		animation: rotate 0.4s linear;
+		@include rotate;		
+	}
+	&:hover object:before {
+		@include rotateSquare;	
+		position: absolute;
+		-webkit-animation: rotateSquare 0.4s linear;
+		animation: rotateSquare 0.4s linear;
+		
+	}
+	&:hover {cursor: pointer;}
+}
+
+
+// .contact li {
+// 	&:hover path.square {
+// 		position: absolute;
+// 		-webkit-animation: rotate 0.5s linear;
+// 		animation: rotate 0.5s linear;
+// 		@include rotateSquare;
+		
+// 	}
+// }
+
+// .contact {
+// 	text-align: left;
+// 	margin-top: 30px;
+// 	ul {
+// 	margin: 0;
+// 	text-align: left;
+// 	}
+// 	li {
+// 		padding: 5px 10px;
+// 		color: #fff;
+// 		margin-right: 10px;
+// 		font-size: $fontSize;
+// 		letter-spacing: 0.5px;
+// 	}
+// 	object {
+// 		margin-right: 5px;
+// 	}
+// 	.email {
+// 		background: $email;
+// 		svg {
+// 			fill: lighten($email,25);
+// 		}
+// 		@include contactHover($email);
+// 	}
+// 	.github {
+// 		background: $github;
+// 		svg {
+// 			fill: lighten($github,25);
+// 		}
+// 		@include contactHover($github);
+
+// 	}
+// 	.twitter {
+// 		background: $twitter;
+// 		svg {
+// 			fill: lighten($twitter,25);
+// 		}
+// 		@include contactHover($twitter);
+// 	}
+// 	.phone {
+// 		background: $phone;
+// 		svg {
+// 			fill: lighten($phone,25);
+// 		}
+// 		@include contactHover($phone);
+// 	}
+// 	object {
+// 		width: 20px;
+// 		height: 20px;
+// 		position: relative;
+// 		top: 3px;
+// 		display: inline-block;
+// 	}
+// }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<object>
+  <svg version="1.1" id="Your_Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  	 viewBox="-429 231 100 100" enable-background="new -429 231 100 100" xml:space="preserve">
+  <path d="M-340,240l-4.1-3.3c-0.4-0.4-1-0.6-1.6-0.6c-0.8,0-1.5,0.3-1.9,0.9l-14.9,18.4l0,0l-0.1,0.1l-56,70.3l1.7-0.2
+  	c0.8-0.1,20.2-2.2,31.1-15.4c8.4-10.2,15.9-19.9,18.7-23.5l17.3-21l-0.1-0.1l-4.5-5.4c1.8-1.1,4.5-3.1,7.1-6.4
+  	c2.9-3.6,3.9-6.4,4.3-7.9c0.9,0.1,1.8-0.2,2.3-0.9l1.2-1.4C-338.8,242.5-338.9,240.9-340,240z M-357.7,254.4
+  	c0.6-0.7,1.6-0.8,2.3-0.3s0.8,1.6,0.3,2.3s-1.6,0.8-2.3,0.3S-358.3,255.1-357.7,254.4z M-354.4,264l2.5,2l-16.4,19.9
+  	c-2.8,3.7-10.2,13.3-18.7,23.5c-8.1,9.9-21.7,13.4-27.4,14.5c5.1-2.3,16.4-7.6,22.1-13.4C-385.3,303.5-358.2,268.8-354.4,264z
+  	 M-349.5,249.4c-0.6,0.7-1.6,0.8-2.3,0.3s-0.8-1.6-0.3-2.3c0.6-0.7,1.6-0.8,2.3-0.3S-348.9,248.7-349.5,249.4z M-343.8,242.4
+  	c-0.6,0.7-1.6,0.8-2.3,0.3s-0.8-1.6-0.3-2.3c0.6-0.7,1.6-0.8,2.3-0.3C-343.3,240.6-343.2,241.7-343.8,242.4z"/>
+  </svg>
+</object>
+
+<style>
+
+	body {
+		margin: 100px;
+	}
+
+	object {
+		display: inline-block;
+	  position: relative;
+	  width: 100px;
+	  height: 100px;
+	}
+
+	object svg {
+		width: 100%;
+	}
+
+	object:before, object:after {
+	  content: '';
+	  position: absolute;
+	  border: 1px solid black;
+	  width: 140px;
+	  height: 140px;
+	  top: -21%;
+	  left: -21%;
+	  border-radius: 5px;
+	  z-index: -1;
+	}
+
+	object:before {
+	  -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+	}
+</style>
+	
+</body>
+</html>
