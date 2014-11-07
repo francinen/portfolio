@@ -33,80 +33,102 @@ header {
 }
 
 nav {
-	@include fontStackReg;
-
+	width: 100%;
+	height: 30px;
+	padding: 5px 20px;
+	background: $github;
+	@include fontStackLight;
+	color: #fff;
+	.navWrapper {
+		width: 90%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
 	ul {
-		text-align: center;
 		padding: 0;
+		margin: 0;
+		float: right;
 	}
 	li {
-		list-style-type: none;
-		display: inline-block;
-		width: auto;
-		text-transform: lowercase;
-		position: relative;
-		color: $nav;
-		font-size: 16px;
+		@include navLists;
 		&:hover {
 			cursor: pointer;
 		}
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
 	}
-	li:hover,
-	li.open {
-		color: $link;
-	}
-	li.open {
-		cursor: default;
-	}
-	li:first-child {
-		margin-right: 130px;
-		padding-left: 18px;
-	}
-	li:last-child {
-		margin-left: 130px;
-	}
-	li.portfolio:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		width: 180%;
-		height: 1px;
-		border-top: 1px solid lighten($nav,9);
-		right: 100%;
-	}
-	li.about:before,
-	li.about:after {
-		content: "";
-		position: absolute;
-		top: 50%;
-		width: 250%;
-		height: 1px;
-		border-top: 1px solid lighten($nav,9);
-	}
-	li.about:before {
-		right: 100%;
-		margin-right: 15px;
-	}
-	li.about:after {
-		left: 100%;
-		margin-left: 15px;
-	}
-	li.contact:after {
-		content: "";
-		position: absolute;
-		top: 50%;
-		width: 250%;
-		height: 0;
-		border-top: 1px solid lighten($nav,9);
-		left: 100%;
-		margin-left: 15px;
-	}
-
 }
+
+// nav {
+// 	@include fontStackReg;
+
+// 	ul {
+// 		text-align: center;
+// 		padding: 0;
+// 	}
+// 	li {
+// 		@include navLists;
+// 		&:hover {
+// 			cursor: pointer;
+// 		}
+// 	}
+// 	li:hover,
+// 	li.open {
+// 		color: $link;
+// 	}
+// 	li.open {
+// 		cursor: default;
+// 	}
+// 	li:first-child {
+// 		margin-right: 130px;
+// 		padding-left: 18px;
+// 	}
+// 	li:last-child {
+// 		margin-left: 130px;
+// 	}
+// 	li.portfolio:before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 50%;
+// 		width: 180%;
+// 		height: 1px;
+// 		border-top: 1px solid lighten($nav,9);
+// 		right: 100%;
+// 	}
+// 	li.about:before,
+// 	li.about:after {
+// 		content: "";
+// 		position: absolute;
+// 		top: 50%;
+// 		width: 250%;
+// 		height: 1px;
+// 		border-top: 1px solid lighten($nav,9);
+// 	}
+// 	li.about:before {
+// 		right: 100%;
+// 		margin-right: 15px;
+// 	}
+// 	li.about:after {
+// 		left: 100%;
+// 		margin-left: 15px;
+// 	}
+// 	li.contact:after {
+// 		content: "";
+// 		position: absolute;
+// 		top: 50%;
+// 		width: 250%;
+// 		height: 0;
+// 		border-top: 1px solid lighten($nav,9);
+// 		left: 100%;
+// 		margin-left: 15px;
+// 	}
+
+// }
 
 .about {
 	text-align: center;
-	margin: 80px 0;
+	margin: 50px 0 250px;
 	// border: 1px solid red;
 	div.outerContainer {
 		margin: 40px auto 0;
@@ -159,7 +181,7 @@ nav {
 	}
 }
 div.mySkills h3 {
-	color: $email;
+	color: $heart;
 }
 div.selfTaught h3 {
 	color: $link;
@@ -178,9 +200,9 @@ div.wantToLearn svg > path {
 
 object.heart {
 	svg {
-		fill: lighten($email,9);
+		fill: lighten($heart,9);
 		g#Layer_1 path {
-			stroke: lighten($email,9);
+			stroke: lighten($heart,9);
 		}
 	}
 }
@@ -210,7 +232,7 @@ object.heart:before {
 	top: 50%;
 	width: 117%;
 	height: 1px;
-	border-top: 1px solid lighten($email,9);
+	border-top: 1px solid lighten($heart,9);
 	right: 100%;
 }
 object.learn:before,
@@ -258,59 +280,166 @@ object.brain:after {
 }
 
 .contact {
-	text-align: left;
+	text-align: center;
 	margin-top: 30px;
 	ul {
 	margin: 0;
-	text-align: left;
+	text-align: center;
 	}
 	li {
 		padding: 5px 10px;
-		color: #fff;
-		margin-right: 10px;
-		font-size: $fontSize;
-		letter-spacing: 0.5px;
+		margin-right: 50px;
+		h3 {
+			// font-size: $fontSize*0.6;
+			// letter-spacing: 0.5px;
+			// @include fontStackReg;
+			// letter-spacing: 1.2px;
+			display: none;
+		}
 	}
 	object {
-		margin-right: 5px;
-	}
-	.email {
-		background: $email;
-		svg {
-			fill: lighten($email,25);
-		}
-		@include contactHover($email);
-	}
-	.github {
-		background: $github;
-		svg {
-			fill: lighten($github,25);
-		}
-		@include contactHover($github);
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		width: 55px;
+		height: 55px;
+		margin: 0 auto;
+		margin: 10px;
 
 	}
+	.email {
+		color: $nav;
+		path.diamond,
+		path.square {
+			stroke: lighten($nav,10);
+		}
+		svg {
+			fill: lighten($nav,10);
+		}
+	}
+	.github {
+		color: $nav;
+		path.diamond,
+		path.square {
+			stroke: lighten($nav,10);
+		}
+		svg {
+			fill: lighten($nav,10);
+		}
+	}
 	.twitter {
-		background: $twitter;
-		svg {
-			fill: lighten($twitter,25);
+		color: $nav;
+		path.diamond,
+		path.square {
+			stroke: lighten($nav,10);
 		}
-		@include contactHover($twitter);
-	}
-	.phone {
-		background: $phone;
 		svg {
-			fill: lighten($phone,25);
+			fill: lighten($nav,10);
 		}
-		@include contactHover($phone);
-	}
-	object {
-		width: 20px;
-		height: 20px;
-		position: relative;
-		top: 3px;
-		display: inline-block;
+
 	}
 }
+
+.icon {
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+	-webkit-transform-origin: 50%;
+	transform-origin: 50%;
+}
+
+path.square,
+path.diamond {
+	-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transform-origin: 50%;
+			transform-origin: 50%;
+	
+	// -webkit-transform-origin: 50%;
+	// transform-origin: 50%;
+	-webkit-transition: rotate 1s linear;
+	transition: rotate 1s linear;
+}
+
+
+@mixin rotate {
+	@-webkit-keyframes rotate {
+		from {-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transform-origin: 50%;
+		transform-origin: 50%;
+	}
+		to {-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+		-webkit-transform-origin: 50%;
+		transform-origin: 50%;}
+	}
+}
+
+.contact li {
+	&:hover path.square,
+	&:hover path.diamond {
+		position: absolute;
+		-webkit-animation: rotate 0.5s linear;
+		animation: rotate 0.5s linear;
+		@include rotate;
+		cursor: pointer;
+	}
+}
+
+// .contact {
+// 	text-align: left;
+// 	margin-top: 30px;
+// 	ul {
+// 	margin: 0;
+// 	text-align: left;
+// 	}
+// 	li {
+// 		padding: 5px 10px;
+// 		color: #fff;
+// 		margin-right: 10px;
+// 		font-size: $fontSize;
+// 		letter-spacing: 0.5px;
+// 	}
+// 	object {
+// 		margin-right: 5px;
+// 	}
+// 	.email {
+// 		background: $email;
+// 		svg {
+// 			fill: lighten($email,25);
+// 		}
+// 		@include contactHover($email);
+// 	}
+// 	.github {
+// 		background: $github;
+// 		svg {
+// 			fill: lighten($github,25);
+// 		}
+// 		@include contactHover($github);
+
+// 	}
+// 	.twitter {
+// 		background: $twitter;
+// 		svg {
+// 			fill: lighten($twitter,25);
+// 		}
+// 		@include contactHover($twitter);
+// 	}
+// 	.phone {
+// 		background: $phone;
+// 		svg {
+// 			fill: lighten($phone,25);
+// 		}
+// 		@include contactHover($phone);
+// 	}
+// 	object {
+// 		width: 20px;
+// 		height: 20px;
+// 		position: relative;
+// 		top: 3px;
+// 		display: inline-block;
+// 	}
+// }
 
 @media all and (max-width: 1150px) {
 }

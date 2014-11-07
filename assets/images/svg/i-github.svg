@@ -4,7 +4,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <g id="Layer_1">
-	<path fill="none" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" d="M41.5,95.5L4.8,58.8c-4.7-4.7-4.7-12.3,0-17
+	<path class="diamond" fill="none" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" d="M41.5,95.5L4.8,58.8c-4.7-4.7-4.7-12.3,0-17
 		L41.5,5.1c4.7-4.7,12.3-4.7,17,0l36.7,36.7c4.7,4.7,4.7,12.3,0,17L58.5,95.5C53.8,100.2,46.2,100.2,41.5,95.5z"/>
 </g>
 <g id="Layer_6" display="none">
@@ -33,7 +33,7 @@
 			/>
 	</g>
 </g>
-<g id="Layer_1_copy">
+<g class="square" id="Layer_1_copy">
 	<path fill="none" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" d="M12,76.3V65.3v-31v-10c0-6.6,5.4-12,12-12h10.3
 		h14.3H66h10c6.6,0,12,5.4,12,12V66v10.3c0,6.6-5.4,12-12,12H66H33.7H24C17.4,88.3,12,82.9,12,76.3z"/>
 </g>
