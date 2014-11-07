@@ -1,14 +1,17 @@
 
 .about {
 	text-align: center;
-	margin: 100px 0 250px;
-	
+	margin: 50px 0 0;
+	.wrapper {
+		border-top: 1px solid lighten($nav,30);
+		padding-top: 50px;
+	}
 	div.outerContainer {
 		width: 100%;
-		padding: 40px 0 60px;
+		padding: 40px 0;
 		margin: 0 auto;
 		text-align: center;
-		border-bottom: 1px solid lighten($nav,9);
+		border-bottom: 1px solid lighten($nav,30);
 	}
 	div.mySkills,
 	div.selfTaught,
@@ -128,7 +131,6 @@ object.heart:before {
 	// height: 1px;
 	// border-top: 1px solid lighten($heart,9);
 	left: 100%;
-	border-top: 1px solid lighten($link,9);
 }
 object.learn:before,
 object.learn:after {
@@ -161,7 +163,6 @@ object.brain:before{
 }
 object.brain:after{
 	right: 100%;
-	border-top: 1px solid lighten($link,9);
 }
 
 // ---------------

@@ -2,7 +2,6 @@ $dimensions: 50px;
 .contact {
 	text-align: center;
 	margin-top: 30px;
-
 	ul {
 	margin: 0;
 	text-align: center;
@@ -47,12 +46,12 @@ $dimensions: 50px;
 		top: 0;
 		left: 0;
 		z-index: -1;
-		border: 1px solid $nav;
+		border: 1px solid lighten($mainHeader,20);
 		border-radius: 5px;
 		-webkit-transform-origin: 50% 50%;
 		transform-origin: 50% 50%;
-		-webkit-transition: rotate 0.4s linear;
-		transition: rotate 0.4s linear;
+		-webkit-transition: all 0.4s linear;
+		transition: all 0.4s linear;
 	}
 	object:before {
 		-webkit-transform: rotate(0deg);
@@ -79,7 +78,18 @@ $dimensions: 50px;
 		position: absolute;
 		left: $dimensions/5;
 		top: $dimensions/5;
-		fill: lighten($nav,10);
+		fill: lighten($mainHeader,10);
+		-webkit-transition: all 0.4s linear;
+		transition: all 0.4s linear;
+	}
+	li {
+		&:hover object:before,
+		&:hover object:after {
+			border-color: $subHeader;
+		}
+		&:hover svg {
+			fill: $subHeader;
+		}
 	}
 }
 

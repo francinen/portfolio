@@ -1,4 +1,14 @@
 $buttonHeight: 70px;
+.works h2 {
+	@include fontStackLight;
+	color: $nav;
+	font-size: $fontSize*1.8;
+	text-align: center;
+	margin-bottom:80px;
+}
+.work:first-child {
+	margin-top: 250px;
+}
 .work {
 	margin-bottom: 100px;
 	h3 {
@@ -6,6 +16,11 @@ $buttonHeight: 70px;
 		font-size: $fontSize*1.2;
 		color: $mainHeader;
 
+	}
+	h4 {
+		@include fontStackLight;
+		font-size: $fontSize*0.8;
+		color: $subHeader;
 	}
 	ul {
 		padding: 0;
@@ -37,11 +52,11 @@ $buttonHeight: 70px;
 }
 .details {
 	display: inline-block;
+	width: 65%;
+	margin-left: 55px;
 	position: relative;
-	z-index: 200;
-	@include column(5.5);
-	@include push(4);
 }
+
 
 
 

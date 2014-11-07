@@ -1,8 +1,41 @@
+
 .topBanner {
 	position: absolute;
-	top: 10px;
-	left: -20px;
-	right: -20px;
+	top: 0;
+	left:0;
+	right: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	ul {
+		padding: 0;
+		font-size: 0;
+	}
+	li.surprise {
+		@include navLists;
+		margin: 0;
+		padding: 0;
+		width: 25%;
+		height: 10px;
+		overflow: hidden;
+	}
+	.green {
+		background: lighten($heart,10);
+	}
+	.orange {
+		background: lighten($link,10);
+	}
+	.red {
+		background: lighten($github,10);
+	}
+	.blue {
+		background: lighten($twitter,10);
+	}
+	// background: url(../images/jpg/hero.jpg) no-repeat center center;
+	// background-size: cover;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
 }
 .squamond {
 	position: relative;
@@ -30,7 +63,7 @@ header {
 	text-align: center;
 	h1.name {	
 			@include fontStackLight;
-			font-size: $fontSize*4.5;
+			font-size: 4em;
 			color: $mainHeader;
 			text-transform: lowercase;
 			letter-spacing: 1px;
