@@ -46,3 +46,11 @@ p {
 	margin-bottom: 15px;
 }
 
+a {
+	color: $link;
+	&:hover,
+	&:focus,
+	&:active {
+		color: lighten($link,25);
+	}
+}
