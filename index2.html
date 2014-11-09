@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Francine Navarro | Front-End Web Developer</title>
 	<link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:300,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -389,6 +388,7 @@
 		<h3>I want to learn</h3>
 		<div class="list">
 			<ul class="learn">
+				<li>Advanced JavaScript</li>
 				<li>SVG Animations</li>
 				<li>Ruby on Rails</li>
 				<li>Mobile App Development</li>
@@ -399,8 +399,8 @@
 
 			</div>
 		</section>
-	<div class="myWork wrapper clearfix" id="myWork">
-		<section class="works clearfix">
+	<div class="myWork wrapper" id="myWork">
+		<section class="works">
 		<h2>Some of my work</h2>
 			<div class="work clearfix">
 				<div class="thumb">
@@ -419,10 +419,10 @@
 				</div>
 				<div class="details">
 					<h3>So Offal It's Good</h3>
-					<h4>jQuery API App</h4>					
-					<button class="moreInfo" id="offalDetails">More Info</button>
-				<!-- 	<h4>Featured Skills:</h4><p>JavaScript, Working with REST APIs, AJAX, JSON, jQuery, Web Design, CSS Animation, Responsive Design</p> -->
-					
+					<p>In my second week of learning JavaScript, I had lots of fun working with the Yummly API to build a web app that searches for offal recipes—dishes that include the organs, entrails, or extremities of animals. The idea came from the meals that regularly come out of my mother’s kitchen, and the meals of my parents’ childhood. The interface is designed to introduce people to the concept of offal and make it simple for beginners to find accessible and delicious recipes.</p>
+					<h4>Featured Skills:</h4><p>JavaScript, Working with REST APIs, AJAX, JSON, jQuery, Web Design, CSS Animation, Responsive Design</p>
+					<ul class="clearfix">
+						<li><a href="http://francine.codes/offalrecipes/" target="_blank" class="moreInfo">Visit Site</a></li>
 					</ul>
 				</div>
 			</div>
@@ -442,11 +442,12 @@
 						</div>
 				</div>
 				<div class="details">
-					<h3>Master Layout</h3>
-					<h4>Responsive Design</h4>
-					<button class="moreInfo" id="masterDetails">More Info</button>
-				<!-- 	<h4>Featured Skills:</h4><p>Responsive Design, Handling PSD files, JavaScript, jQuery, pure CSS carousel, CSS Animation</p> -->
-					
+					<h3>Responsive Layout</h3>
+					<p>For my Week 3 Project at HackerYou, I was given a PSD file to develop into a responsive single-page website. The layout is built on the grid system, and I loved using Sass variables and mixins to streamline the design process. A personal highlight from this project was experimenting with scroll-activated animations and mobile-friendly navigation bars.</p>
+					<h4>Featured Skills:</h4><p>Responsive Design, Handling PSD files, JavaScript, jQuery, pure CSS carousel, CSS Animation</p>
+					<ul class="clearfix">
+						<li><a href="http://francine.codes/master/" target="_blank" class="moreInfo">Visit Site</a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="work">
@@ -466,57 +467,21 @@
 					</div>
 					</div>
 					<div class="details">
-						<h3>Stkr</h3>
-						<h4>jQuery Plugin</h4>
-						<button class="moreInfo" id="stkrDetails">More Info</button>
-					<!-- 	<h4>Featured Skills:</h4><p>JavaScript, jQuery, Documentation</p> -->
-						
+						<h3>Stkr jQuery Plugin</h3>
+						<p>This jQuery plugin makes it easy to manipulate when, where, and how an element becomes fixed on a webpage. You can identify a designated “sticky zone” for your fixed elements, have them fade in/out of view, or appear seemingly out of nowhere. And as a bonus feature, you can even set the sticky effects to be triggered by a horizontal scroll!</p>
+						<h4>Featured Skills:</h4><p>JavaScript, jQuery, Documentation</p>
+						<ul class="clearfix">
+							<li><a href="http://francinen.github.io/stkr-plugin" target="_blank" class="moreInfo">Visit Site</a></li>
+						</ul>
 					</div>
-					
 			</div>		
 		</section>
-
 	</div>	
-
-	<div class="projectDetails" id="offalModal">
-	<button class="close"><i class="fa fa-times-circle"></i></button>
-		<div class="details">
-			<h3>So Offal It's Good</h3>
-			<p>In my second week of learning JavaScript, I had lots of fun working with the Yummly API to build a web app that searches for offal recipes—dishes that include the organs, entrails, or extremities of animals. The idea came from the meals that regularly come out of my mother’s kitchen, and the meals of my parents’ childhood. The interface is designed to introduce people to the concept of offal and make it simple for beginners to find accessible and delicious recipes.</p>
-			<a href="http://francine.codes/master/" target="_blank" class="moreInfo">Visit Site</a>
-			</ul>
-		</div>
-	</div>
-
-	<div class="projectDetails" id="masterModal">
-	<button class="close">Close</button>
-		<div class="details">
-			<h3>Responsive Layout</h3>
-			<p>For my Week 3 Project at HackerYou, I was given a PSD file to develop into a responsive single-page website. The layout is built on the grid system, and I loved using Sass variables and mixins to streamline the design process. A personal highlight from this project was experimenting with scroll-activated animations and mobile-friendly navigation bars.</p>
-			<h4>Featured Skills:</h4><p>Responsive Design, Handling PSD files, JavaScript, jQuery, pure CSS carousel, CSS Animation</p>
-			<ul class="clearfix">
-				<a href="http://francine.codes/master/" target="_blank" class="moreInfo">Visit Site</a>
-			</ul>
-		</div>
-	</div>
-	<div class="projectDetails" id="stkrModal">
-	<button class="close">Close</button>
-		<div class="details">
-			<h3>Stkr jQuery Plugin</h3>
-			<p>This jQuery plugin makes it easy to manipulate when, where, and how an element becomes fixed on a webpage. You can identify a designated “sticky zone” for your fixed elements, have them fade in/out of view, or appear seemingly out of nowhere. And as a bonus feature, you can even set the sticky effects to be triggered by a horizontal scroll!</p>
-			<h4>Featured Skills:</h4><p>JavaScript, jQuery, Documentation</p>
-			<a href="http://francinen.github.io/stkr-plugin" target="_blank" class="moreInfo">Visit Site</a>
-			</ul>
-		</div>
-	</div>
-
-
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
 <script src="assets/js/jquery.smooth-scroll.min.js"></script>
-<script src="assets/js/jquery.disablescroll.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

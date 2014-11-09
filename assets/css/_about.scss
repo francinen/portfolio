@@ -35,16 +35,23 @@
 	p {
 		font-size: $fontSize;
 	}
+	strong {
+		font-weight: 400;
+	}
 	h3 {
 		// min-width: 132px;
 		@include fontStackReg;
 		font-size: $fontSize;
+		margin: 0 auto;
+	}
+	.funFact {
+		font-weight: 400;
 	}
 	div.list {
-		margin: 0;
+		margin: 0 auto;
 		margin-bottom: 10px;
 		ul {
-			margin: 0;
+			margin: 0 auto;
 			padding: 0;
 		}
 		li {

@@ -43,20 +43,17 @@ object svg {
 	}
 }
 
-$w: 170px;
+$w: 200px;
 
 .work {
 	position: relative;
-	width: 33.3333%;
-	float: left;
 	object {
 		width: $w;
 		height: $w;
 		position: absolute;
-		left: 10%;
+		left: 0;
 		display: inline-block;
 		z-index: 100;
-		margin: 0 auto;
 		svg {
 			fill: #d6d6d6;
 		}
@@ -65,7 +62,6 @@ $w: 170px;
 .thumbContainer {
 	width: $w;
 	height: $w;
-	margin: 0 auto;
 	position: relative;
 	border-radius: 10px;
 	overflow: hidden;

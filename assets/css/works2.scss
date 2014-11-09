@@ -1,8 +1,7 @@
 $buttonHeight: 70px;
 .myWork.wrapper {
-	width: 95%;
-	position: relative;
-	// padding-left: 50px;
+	width: 85%;
+	padding-left: 50px;
 }
 .works h2 {
 	@include fontStackLight;
@@ -16,7 +15,6 @@ $buttonHeight: 70px;
 }
 .work {
 	margin-bottom: 100px;
-	text-align: center;
 	h3 {
 		@include fontStackReg;
 		font-size: $fontSize*1.2;
@@ -29,7 +27,6 @@ $buttonHeight: 70px;
 	h4 {
 		@include fontStackLight;	
 		color: $subHeader;
-		margin: 5px 0;
 	}
 	h4+p {
 		max-width: 510px;
@@ -47,12 +44,12 @@ $buttonHeight: 70px;
 			margin-right: 40px;
 		}
 	}
-	.moreInfo {
-		margin: 10px 0;
+	a.moreInfo {
+		height: $buttonHeight;
 		@include fontStackLight;
 		font-size: $fontSize*0.8;
 		background: lighten($link,10);
-		padding: 6px 10px;
+		padding: 6px 15px;
 		border-radius: 5px;
 		border: none;
 		box-shadow: none;
@@ -63,46 +60,23 @@ $buttonHeight: 70px;
 		&:hover {
 			background: $link;
 		}
-
 	}
 }
 .thumb {
-	width: 200px;
-	margin: 0 auto 50px;
-	text-align: center;
-	display: block;
+	width: auto;
+	display: inline-block;
+	margin-right: 15px;
 	position: relative;
+	top: 50px;
 	vertical-align: top;
 }
 .details {
 	display: inline-block;
 	width: 65%;
-	margin: 0 auto;
+	margin-left: 55px;
 	position: relative;
 }
 
-div.projectDetails {
-	background: #fff;
-	width: 100%;
-	padding: 80px;
-	position: absolute;
-	top: 0;
-	// left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 100000;
-	display: none;
-	overflow: hidden;
-	button.close {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		background: none;
-		border: none;
-		box-shadow: none;
-		font-size: 35px;
-	}
-}
 
 
 
