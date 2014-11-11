@@ -3,70 +3,75 @@
 	text-align: center;
 	margin: 50px 0 0;
 	.wrapper {
-		border-top: 1px solid lighten($nav,30);
+		border-top: 1px solid lighten($subHeader,30);
 		padding-top: 50px;
 	}
-	div.outerContainer {
-		width: 100%;
-		padding: 40px 0;
-		margin: 0 auto;
-		text-align: center;
-		border-bottom: 1px solid lighten($nav,30);
-	}
-	div.mySkills,
-	div.selfTaught,
-	div.wantToLearn {
-		margin: 0 auto;
-		width: 33.3333%;
-		float: left;
+	
+}
+div.outerContainer {
+	width: 100%;
+	padding: 40px 0;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 1px solid lighten($subHeader,30);
+}
+div.mySkills,
+div.selfTaught,
+div.wantToLearn {
+	margin: 0 auto;
+	width: 33.3333%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	object {
+		display: inline-block;
+		width: 100px;
+		height: 100px;
 		position: relative;
-		overflow: hidden;
-		object {
-			display: inline-block;
-			width: 100px;
-			height: 100px;
-			position: relative;
-			margin-bottom: 15px;
-		}
+		margin-bottom: 15px;
 	}
-	div.wantToLearn {
-		margin-right: 0;
-	}
-	p {
-		font-size: $fontSize;
-	}
-	strong {
-		font-weight: 400;
-	}
-	h3 {
-		// min-width: 132px;
-		@include fontStackReg;
-		font-size: $fontSize;
+}
+div.wantToLearn {
+	margin-right: 0;
+}
+p {
+	font-size: $fontSize;
+}
+p.oneliner {
+	font-weight: 400;
+	font-size: $fontSize*1.1;
+}
+strong {
+	font-weight: 400;
+}
+h3 {
+	// min-width: 132px;
+	@include fontStackReg;
+	font-size: $fontSize;
+	margin: 0 auto;
+}
+.funFact {
+	font-weight: 400;
+}
+div.list {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	ul {
 		margin: 0 auto;
+		padding: 0;
 	}
-	.funFact {
-		font-weight: 400;
-	}
-	div.list {
-		margin: 0 auto;
+	li {
+		@include fontStackLight;
+		list-style-type: none;
 		margin-bottom: 10px;
-		ul {
-			margin: 0 auto;
-			padding: 0;
-		}
-		li {
-			@include fontStackLight;
-			list-style-type: none;
-			margin-bottom: 10px;
-			letter-spacing: 1.2px;
-			&:first-child {
-				margin-top: 10px;
-			}
+		letter-spacing: 1.2px;
+		&:first-child {
+			margin-top: 10px;
 		}
 	}
 }
 div.mySkills h3 {
-	color: $heart;
+	color: $github;
 }
 div.selfTaught h3 {
 	color: $link;
@@ -85,9 +90,9 @@ div.wantToLearn svg > path {
 
 object.heart {
 	svg {
-		fill: lighten($heart,9);
+		fill: lighten($github,9);
 		g#Layer_1 path {
-			stroke: lighten($heart,9);
+			stroke: lighten($github,9);
 		}
 	}
 }
@@ -117,7 +122,7 @@ object.heart:after {
 	top: 50%;
 	width: 117%;
 	height: 1px;
-	border-top: 1px solid lighten($heart,9);
+	border-top: 1px solid lighten($github,9);
 }
 
 object.heart:after {

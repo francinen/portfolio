@@ -13,6 +13,17 @@ $(function(){
 // var assignClass = function(){
 
 // };
+	$('.contact').animate({'opacity':1,'top':'0'},1400);
+
+
+	$(this).scroll(function(){
+		var y = $(this).scrollTop();
+		var x = $('#mySkills').position();
+		if (y >= (x.top-200)) {
+	$('.work').animate({'opacity':1,'top':'0'},1500);
+		}
+	});
+
 
 	var randomNumber = function(n){
 		return Math.floor(Math.random()*n);
@@ -40,31 +51,62 @@ $(function(){
 
 	},1800);
 
-	$('#offalDetails').click(function(){
-		var x = $('#myWork').position();
-		var y = $(window).scrollTop();
-		$('#offalModal').height($(window).innerHeight()).css({'top':y}).fadeIn(500);
-		$('body').disablescroll();
+	$('.viewSite').click(function(){
+		$('head').find('title').text('Take a look at my other projects');
 	});
 
-	$('#masterDetails').click(function(){
-		var x = $('#myWork').position();
-		var y = $(window).scrollTop();
-		$('#masterModal').height($(window).innerHeight()).css({'top':y}).fadeIn(500);
-		$('body').disablescroll();
-	});
 
-	$('#stkrDetails').click(function(){
-		var x = $('#myWork').position();
-		var y = $(window).scrollTop();
-		$('#stkrModal').height($(window).innerHeight()).css({'top':y}).fadeIn(500);
-		$('body').disablescroll();
-	});
 
-	$('button.close').click(function(){
-		$('.projectDetails').fadeOut(500);
-		$('body').disablescroll('undo');
-	});
+	// $('#offalDetails').click(function(){
+	// 	var x = $('#myWork').position();
+	// 	var y = $(window).scrollTop();
+	// 	$('#offalModal').height($(window).innerHeight()).css({'top':y}).fadeIn(500).addClass('visible');
+	// 	if ($('#offalModal').hasClass('visible')){
+	// 		$('body').disablescroll();
+	// 			$('#offalModal').disablescroll('undo');
+		
+	// 	// $(document).scroll(function(){
+	// 	// 	var y = $(window).scrollTop();
+	// 	// 	var x = $('.projectDetails').position();
+	// 	// 	if (y<=x.top){
+	// 	// 		$('body').disablescroll();
+	// 	// 		$('#offalModal').disablescroll('undo');
+			
+	// }
+	// else {
+	// 	$('body').disablescroll('undo');
+	// };
+	// 	// $('body').disablescroll();
+	// });
+
+	// $('#masterDetails').click(function(){
+	// 	var x = $('#myWork').position();
+	// 	var y = $(window).scrollTop();
+	// 	$('#masterModal').height($(window).innerHeight()).css({'top':y}).fadeIn(500).addClass('visible');
+	// 	// $('body').disablescroll();
+	// });
+
+	// $('#stkrDetails').click(function(){
+	// 	var x = $('#myWork').position();
+	// 	var y = $(window).scrollTop();
+	// 	$('#stkrModal').height($(window).innerHeight()).css({'top':y}).fadeIn(500).addClass('visible');
+		
+	// });
+
+	// $('button.close').click(function(){
+	// 	$('.projectDetails').fadeOut(500).removeClass('visible');
+	// 	$('body').disablescroll('undo');
+	// });
+
+	// $('.projectDetails').click(function(){
+	// 	if ($('img,.detailsWrapper').has(event.target).length==0 && !$('img,.detailsWrapper').is(event.target)){
+	// 		$(this).fadeOut(500).removeClass('visible');
+	// 		$('body').disablescroll('undo');
+			
+	// 	}
+	// });
+
+	
 
 
 

@@ -14,11 +14,13 @@
 	
 }
 
-@media all and (max-width: 985px) {
-	.details {
-		width: 55%;
+@media all and (max-width: 990px) {
+	.work h3 {
+		font-size: 1.15em;
 	}
 }
+
+
 
 @media all and (max-width: 890px){
 	.about h3 {
@@ -42,6 +44,15 @@
 
 }
 
+@media all and (max-width: 820px){
+.work {
+	width: 50%;
+	&:last-of-type {
+		margin: 0 auto;
+	}
+}
+}
+
 @media all and (max-width: 780px) {
 	.about h3 {
 		width: 100%;
@@ -58,27 +69,45 @@
 	
 }
 
-@media all and (max-width: 700px) {
-	.thumb {
-		object, .thumbContainer {
-			width: 150px;
-			height: 150px;
-		}
+@media all and (max-width: 750px) {
+	img.full {
+		width: 70%;
 	}
+	img.mobile {
+		width: 22%;
+	}
+}
+
+@media all and (max-width: 720px) {
+	header h1.name {
+		font-size: 5em;
+	}
+}
+
+@media all and (max-width: 700px) {
+	// .thumb {
+	// 	object, .thumbContainer {
+	// 		width: 150px;
+	// 		height: 150px;
+	// 	}
+	// }
 	.work {
 		h3 {
 			font-size: 1.27em;
 		}	
-		 p {
-			font-size: 1em;
-		}
-		h4 {
-			font-size: 1.1em;
-		}
-		h4+p {
-			font-size: 0.9em;
-		}
 	}
+	div.detailsWrapper {
+		.details {
+			width: 100%;
+			border-right: none;
+		}
+		aside.secondary {
+			display: none;
+		}
+		
+	}
+
+
 }
 
 @media all and (max-width: 660px) {
@@ -86,9 +115,24 @@
 		width: 100%;
 		margin-top: 10px;
 	}
+	.portfolio 
+		#offalRecipes, #masterLayout, #stkr {
+		img.full {
+			width: 80%;
+		}
+		img.mobile {
+			position: absolute;
+			top: 70px;
+			left: 60%;
+			width: 32%;
+		}
+	}
 }
 
 @media all and (max-width: 620px){
+	header h1.name {
+		font-size: 4.5em;
+	}
 	.about {
 		.wrapper {
 			@include column(10);
@@ -104,15 +148,8 @@
 }
 
 @media all and (max-width: 580px) {
-	
 	.thumb {
-		object, .thumbContainer {
-			width: 200px;
-			height: 200px;
-		}
-	}
-	.thumb {
-		margin-bottom: 100px;
+		margin-bottom: 50px;
 	}
 	.works {
 		h2 {
@@ -120,7 +157,10 @@
 		}
 	}
 	.work {
-		margin-bottom: 30px;
+		margin: 80px auto;
+		float: none;
+		width: 75%;
+
 
 	}
 	.myWork.wrapper {
@@ -128,10 +168,13 @@
 		padding: 0;
 
 	}
-	.details {
-		text-align: left;
-		margin: 0;
-		width: 75%;
+	div.projectDetails .details {
+		h3 {
+			font-size: 1.5em;
+		}
+		p {
+			font-size: 1em;
+		}
 	}
 }
 
@@ -162,6 +205,29 @@
 	}
 }
 
+@media all and (max-width: 490px){
+	div.screenshots {
+		padding-left: 20px;
+	}
+	.portfolio {
+		
+		#offalRecipes, #masterLayout {
+			img.full {
+				display: none;
+			}
+			img.mobile {
+				position: static;
+				width: 75%;
+
+			}
+		}
+		#stkr {
+			img.full {
+				width: 95%;
+			}
+		}
+	}
+}
 
 @media all and (max-width: 440px){
 	.about {
@@ -209,5 +275,8 @@
 			font-weight: 300;
 
 		}
+	}
+	.siteLinks li {
+		margin-bottom: 20px;
 	}
 }

@@ -1,4 +1,24 @@
 $marginBottom: -20px;
+
+* {
+	margin: 0;
+}
+
+.container {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -155px;
+}
+
+.footer, 
+.push {
+	height: 50px;
+}
+html, body {
+	height: 100%;
+}
+
 .wrapper {
 	width: 65%;
 	max-width: 1200px;
@@ -7,13 +27,8 @@ $marginBottom: -20px;
 
 header {
 	width: 100%;
-	padding: 50px 0 0;
-}
-
-nav {
-	width: 90%;
-	margin: 0 auto;
-	padding: 20px 0 40px;
+	// padding: 50px 0 0;
+	padding: 50px 0;
 }
 
 .contact .wrapper {
@@ -29,5 +44,11 @@ nav {
 .works {
 	width: 100%;
 	margin-top: 30px;
+}
+footer {
+	width: 100%;
+	height: 50px;
+	background: #333;
+	margin-top: 100px;
 }
 

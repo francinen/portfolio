@@ -1,7 +1,10 @@
-                     $dimensions: 50px;
+$dimensions: 50px;
 .contact {
 	text-align: center;
 	margin-top: 30px;
+	position: relative;
+	top: -70px;
+	opacity: 0.1;
 	ul {
 	margin: 0;
 	text-align: center;
