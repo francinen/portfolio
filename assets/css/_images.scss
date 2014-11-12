@@ -85,6 +85,10 @@ $w: 170px;
 		@include thumbHover;
 		fill: $subHeader;
 	}
+	&:hover img {
+		opacity: 1;
+	}
+
 	// &:hover object {
 	// 	-webkit-animation: rotate 0.5s linear;
 	// 	animation: rotate 0.5s linear;
@@ -104,6 +108,9 @@ $w: 170px;
 		height: auto;
 		-webkit-transform: rotate(-45deg) scale(1.5);
 		transform: rotate(-45deg) scale(1.5);
+		opacity: 0.4;
+		-webkit-transition: opacity 1s;
+		transition: opacity 1s;
 	}
 
 }
