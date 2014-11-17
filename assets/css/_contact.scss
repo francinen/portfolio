@@ -23,10 +23,6 @@ $dimensions: 50px;
 			margin-right: 0;
 		}	
 		h3 {
-			// font-size: $fontSize*0.6;
-			// letter-spacing: 0.5px;
-			// @include fontStackReg;
-			// letter-spacing: 1.2px;
 			display: none;
 		}
 	}
@@ -36,13 +32,9 @@ $dimensions: 50px;
 		text-align: center;
 		width: 30px;
 		height: 30px;
-		// margin: 0 auto;
-		// margin: 10px;
-
 	}
 	object:before,	object:after {
 		content:'';
-		// display: block;
 		width: $dimensions;
 		height: $dimensions;
 		position: absolute;
@@ -60,22 +52,11 @@ $dimensions: 50px;
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 			transform: rotate(0deg);
-
-	// -webkit-transform-origin: 50%;
-	// -moz-transform-origin: 50%;
-	// transform-origin: 50% 50%;
-	// -webkit-transition: rotate 1s linear;
-	// transition: rotate 1s linear;
 	}
 	object:after {
 		-webkit-transform: rotate(45deg);
 		-moz-transform: rotate(45deg);
 			transform: rotate(45deg);
-	// -webkit-transform-origin: 50%;
-	// -moz-transform-origin: 50%;
-	// transform-origin: 50% 50%;
-	// -webkit-transition: rotate 1s linear;
-	// transition: rotate 1s linear;
 	}
 	svg.icon {
 		position: absolute;
@@ -95,13 +76,6 @@ $dimensions: 50px;
 		}
 	}
 }
-
-// .icon {
-// 	-webkit-transform: scale(0.8);
-// 	transform: scale(0.8);
-// 	-webkit-transform-origin: 50%;
-// 	transform-origin: 50%;
-// }
 
 @mixin rotate {
 	@-webkit-keyframes rotate {
@@ -177,69 +151,3 @@ $dimensions: 50px;
 	}
 	&:hover {cursor: pointer;}
 }
-
-
-// .contact li {
-// 	&:hover path.square {
-// 		position: absolute;
-// 		-webkit-animation: rotate 0.5s linear;
-// 		animation: rotate 0.5s linear;
-// 		@include rotateSquare;
-		
-// 	}
-// }
-
-// .contact {
-// 	text-align: left;
-// 	margin-top: 30px;
-// 	ul {
-// 	margin: 0;
-// 	text-align: left;
-// 	}
-// 	li {
-// 		padding: 5px 10px;
-// 		color: #fff;
-// 		margin-right: 10px;
-// 		font-size: $fontSize;
-// 		letter-spacing: 0.5px;
-// 	}
-// 	object {
-// 		margin-right: 5px;
-// 	}
-// 	.email {
-// 		background: $email;
-// 		svg {
-// 			fill: lighten($email,25);
-// 		}
-// 		@include contactHover($email);
-// 	}
-// 	.github {
-// 		background: $github;
-// 		svg {
-// 			fill: lighten($github,25);
-// 		}
-// 		@include contactHover($github);
-
-// 	}
-// 	.twitter {
-// 		background: $twitter;
-// 		svg {
-// 			fill: lighten($twitter,25);
-// 		}
-// 		@include contactHover($twitter);
-// 	}
-// 	.phone {
-// 		background: $phone;
-// 		svg {
-// 			fill: lighten($phone,25);
-// 		}
-// 		@include contactHover($phone);
-// 	}
-// 	object {
-// 		width: 20px;
-// 		height: 20px;
-// 		position: relative;
-// 		top: 3px;
-// 		display: inline-block;
-// 	}
-// }

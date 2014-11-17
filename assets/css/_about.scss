@@ -1,4 +1,3 @@
-
 .about {
 	text-align: center;
 	margin: 50px 0 0;
@@ -6,7 +5,6 @@
 		border-top: 1px solid lighten($subHeader,30);
 		padding-top: 50px;
 	}
-	
 }
 div.outerContainer {
 	width: 100%;
@@ -84,15 +82,12 @@ div.selfTaught h3 {
 div.wantToLearn h3 {
 	color: $phone;
 }
-
 div.selfTaught g#Layer_2 path {
 	stroke: lighten($link,9);
 }
-
 div.wantToLearn svg > path {
 	stroke: lighten($phone,9);
 }
-
 object.heart {
 	svg {
 		fill: lighten($github,9);
@@ -101,7 +96,6 @@ object.heart {
 		}
 	}
 }
-
 object.learn {
 	svg {
 		fill: lighten($link,9);
@@ -110,7 +104,6 @@ object.learn {
 		}
 	}
 }
-
 object.brain {
 	svg {
 		fill: lighten($phone,9);
@@ -119,9 +112,6 @@ object.brain {
 		}
 	}
 }
-
-
-
 object.heart:before,
 object.heart:after {
 	content: "";
@@ -131,7 +121,6 @@ object.heart:after {
 	height: 1px;
 	border-top: 1px solid lighten($github,9);
 }
-
 object.heart:after {
 	right: 100%;	
 }
@@ -162,10 +151,8 @@ object.brain:before {
 	height: 0;
 	border-top: 1px solid lighten($phone,9);
 }
-
 object.brain:before{
-	left: 100%;
-	
+	left: 100%;	
 }
 object.brain:after{
 	right: 100%;

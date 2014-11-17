@@ -1,9 +1,10 @@
 $buttonHeight: 70px;
+
 .myWork.wrapper {
 	width: 95%;
 	position: relative;
-	// padding-left: 50px;
 }
+
 .works h2 {
 	@include fontStackLight;
 	color: $nav;
@@ -16,14 +17,15 @@ $buttonHeight: 70px;
 		font-size: $fontSize;
 	}
 }
+
 .work:first-child {
 	margin-top: 250px;
 }
+
 .work {
 	margin-bottom: 100px;
 	text-align: center;
 	position: relative;
-	// top: -80px;
 	opacity: 0.3;
 	a {
 		text-decoration: none;
@@ -55,8 +57,8 @@ $buttonHeight: 70px;
 			margin-right: 40px;
 		}
 	}
-	
 }
+
 .thumb {
 	width: $w;
 	margin: 0 auto 50px;
@@ -65,6 +67,7 @@ $buttonHeight: 70px;
 	position: relative;
 	vertical-align: top;
 }
+
 .details {
 	display: inline-block;
 	width: 100%;
@@ -74,7 +77,6 @@ $buttonHeight: 70px;
 
 
 div.projectDetails {
-	// background: rgba(237,237,237,0.7);
 	width: 100%;
 	padding: 25px 50px;
 	div.screenshots, 
@@ -108,8 +110,7 @@ div.projectDetails {
 		p {
 			font-size: $fontSize*0.87;
 			margin-bottom: 0;
-		}
-		
+		}	
 	}
 	aside.secondary {
 		display: inline-block;
@@ -119,20 +120,17 @@ div.projectDetails {
 		h4 {
 			color: $subHeader;
 			margin: 5px 0;
-		}
-			
+		}	
 	}
 	div.screenshots {
 		padding-top: 5px;
 		margin-bottom: 15px;
 		position: relative;
 		width: auto;
-
 		img {
 			border-radius: 6px;
 			border: 3px solid lighten($nav,30);
-		}
-		
+		}	
 	}
 	button.close {
 		position: absolute;
@@ -177,8 +175,6 @@ div.projectDetails {
 	float: right;
 }
 
-
-
 img.mobile, 
 img.ipad {
 	width: 20%;
@@ -206,7 +202,6 @@ img.full {
 		position: relative;
 		z-index: 1;
 	}
-
 }
 
 #masterLayout {
@@ -220,202 +215,3 @@ img.full {
 		left: -80px;
 	}
 }
-
-
-// div.projectDetails {
-// 	background: rgba(237,237,237,0.7);
-// 	width: 100%;
-// 	padding: 25px 50px;
-// 	position: absolute;
-// 	top: 0;
-// 	// left: 0;
-// 	right: 0;
-// 	bottom: 0;
-// 	z-index: 100000;
-// 	display: none;
-// 	overflow: hidden;
-
-// 	div.screenshots, 
-// 	div.detailsWrapper {
-// 		max-width: 900px;
-// 		margin: 0 auto;
-// 	}
-// 	div.detailsWrapper {
-// 		background: #fff;
-// 		padding: 20px 25px 40px;
-// 		max-height: 55%;
-// 		border-radius: 10px;
-
-// 	}
-// 	.details,
-// 	aside {
-// 		margin: 0;
-// 		vertical-align: top;
-// 	}
-// 	.details {
-// 		display: inline-block;
-// 		width: 70%;
-// 		padding-right: 20px;
-// 		margin-right: 10px;
-// 		border-right: 1px solid $nav;
-// 		h3 {
-// 			@include fontStackLight;
-// 			font-size: $fontSize*1.5;
-// 			color: $mainHeader;
-// 		}
-// 		p {
-// 			font-size: $fontSize*0.87;
-// 			margin-bottom: 0;
-// 		}
-		
-// 	}
-// 	aside.secondary {
-// 		display: inline-block;
-// 		width: 25%;
-// 		font-size: $fontSize*0.76;
-// 		@include fontStackLight;
-// 		h4 {
-// 			color: $subHeader;
-// 			margin: 5px 0;
-// 		}
-			
-// 	}
-// 	div.screenshots {
-// 		padding-top: 5px;
-// 		margin-bottom: 15px;
-// 		position: relative;
-// 		width: auto;
-// 		img {
-// 			border: 5px solid lighten($nav,30);
-// 		}
-		
-// 	}
-// 	button.close {
-// 		position: absolute;
-// 		top: 20px;
-// 		right: 20px;
-// 		background: none;
-// 		border: none;
-// 		box-shadow: none;
-// 		font-size: 35px;
-// 	}
-// }
-
-// .moreInfo,
-// .viewSite {
-// 	margin: 10px 0;
-// 	@include fontStackLight;
-// 	font-size: $fontSize*0.8;
-// 	background: lighten($link,10);
-// 	padding: 6px 10px;
-// 	border-radius: 5px;
-// 	border: none;
-// 	box-shadow: none;
-// 	color: #fff;
-// 	text-decoration: none;
-// 	-webkit-transition: all 0.4s;
-// 	transition: all 0.4s;
-// 	&:hover {
-// 		background: $link;
-// 	}
-// }
-
-// .viewSite {
-// 	float: right;
-// 	&:hover {
-// 		color: #fff;
-// 	}
-// }
-
-// img.mobile, 
-// img.ipad {
-// 	width: 20%;
-// }
-
-// img.full {
-// 	width: 60%;
-// }
-
-// #offalModal {
-// 	img.mobile {
-// 		float: left;
-// 		position: relative;
-// 		z-index: 3;
-// 		top: 60px;
-// 		left: -80px;
-// 	}
-// 	img.ipad {
-// 		float: left;
-// 		position: relative;
-// 		z-index: 2;
-// 	}
-// 	img.full {
-// 		float: left;
-// 		position: relative;
-// 		z-index: 1;
-// 	}
-
-// }
-
-// #masterModal {
-// 	img.full {
-// 		float: left;
-// 		margin-right: 30px;
-// 	}
-// 	img.mobile {
-// 		position: relative;
-// 		top: 60px;
-// 		left: -80px;
-// 	}
-// }
-
-
-
-
-
-// .work {
-// 	margin-bottom: 400px;
-// 	h3 {
-// 		@include fontStackReg;
-// 		font-size: $fontSize*1.2;
-// 		color: $mainHeader;
-
-// 	}
-// }
-// .thumb {
-// 	width: auto;
-// 	display: inline-block;
-// 	margin-right: 50px;
-// 	position: absolute;
-// 	top: 0;
-// 	left: -50px;
-// 	z-index: 1;
-// }
-// .details {
-// 	display: inline-block;
-// 	position: relative;
-// 	z-index: 200;
-// 	@include column(5.5);
-// 	margin-left: $d+70;
-// }
-
-// $buttonHeight: 70px;
-
-// a {
-// 	height: $buttonHeight;
-// 	@include fontStackLight;
-// 	font-size: $fontSize*0.8;
-// 	background: none;
-// 	border: none;
-// 	box-shadow: none;
-// 	color: $link;
-// }
-
-// object.screen {
-// 	width: $buttonHeight;
-// 	height: $buttonHeight/0.8;
-// 	display: inline-block;
-// }
-// object.screen + h4 {
-// 	display: inline-block;
-// }

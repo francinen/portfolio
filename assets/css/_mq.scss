@@ -1,17 +1,13 @@
 
 @media all and (max-width: 1095px) {
 	section.about .outerContainer {
-
 	}
 }
 
 @media all and (max-width: 1090px) {
-	
-		li {
-			margin-bottom: 10px;
-		
-		}
-	
+	li {
+		margin-bottom: 10px;
+	}	
 }
 
 @media all and (max-width: 990px) {
@@ -19,8 +15,6 @@
 		font-size: 1.15em;
 	}
 }
-
-
 
 @media all and (max-width: 890px){
 	.about h3 {
@@ -36,21 +30,20 @@
 		} 
 		div.list {
 		width: 60%;
-		li {
-			margin-bottom: 10px;
-		}
+			li {
+				margin-bottom: 10px;
+			}
 		}
 	}
-
 }
 
 @media all and (max-width: 820px){
 .work {
 	width: 50%;
-	&:last-of-type {
-		margin: 0 auto;
+		&:last-of-type {
+			margin: 0 auto;
+		}
 	}
-}
 }
 
 @media all and (max-width: 780px) {
@@ -60,13 +53,11 @@
 	.about div.list {
 		width: 90%;
 		margin-left: 0;
-
 	}
 	.myWork.wrapper {
 		width: 95%;
 		margin: 0 auto;
 	}
-	
 }
 
 @media all and (max-width: 750px) {
@@ -85,12 +76,6 @@
 }
 
 @media all and (max-width: 700px) {
-	// .thumb {
-	// 	object, .thumbContainer {
-	// 		width: 150px;
-	// 		height: 150px;
-	// 	}
-	// }
 	.work {
 		h3 {
 			font-size: 1.27em;
@@ -104,10 +89,7 @@
 		aside.secondary {
 			display: none;
 		}
-		
 	}
-
-
 }
 
 @media all and (max-width: 660px) {
@@ -160,13 +142,10 @@
 		margin: 80px auto;
 		float: none;
 		width: 75%;
-
-
 	}
 	.myWork.wrapper {
 		text-align: center;
 		padding: 0;
-
 	}
 	div.projectDetails .details {
 		h3 {
@@ -209,8 +188,7 @@
 	div.screenshots {
 		padding-left: 20px;
 	}
-	.portfolio {
-		
+	.portfolio {	
 		#offalRecipes, #masterLayout {
 			img.full {
 				display: none;
@@ -218,7 +196,8 @@
 			img.mobile {
 				position: static;
 				width: 75%;
-
+				margin: 0 auto; 
+				float: none;
 			}
 		}
 		#stkr {
@@ -226,7 +205,29 @@
 				width: 95%;
 			}
 		}
-	}
+		div.projectDetails{
+			text-align: center;
+			div.screenshots {
+				padding: 0;
+				margin: 0 auto;
+			}
+			div.detailsWrapper .details {
+				padding: 0;
+				margin: 0;
+				p{
+					display: none;
+				}
+			}
+		}
+		.siteLinks {
+			float: none;
+			text-align: center;
+			li {
+				margin-bottom: 20px;
+				display: block;
+			}
+		} 
+	}	
 }
 
 @media all and (max-width: 440px){
@@ -273,10 +274,6 @@
 			margin-top: 20px;
 			font-size: 1.8em;
 			font-weight: 300;
-
 		}
-	}
-	.siteLinks li {
-		margin-bottom: 20px;
 	}
 }
