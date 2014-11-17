@@ -23,6 +23,7 @@ div.wantToLearn {
 	float: left;
 	position: relative;
 	overflow: hidden;
+	opacity: 0.2;
 	object {
 		display: inline-block;
 		width: 100px;
@@ -56,9 +57,13 @@ h3 {
 div.list {
 	margin: 0 auto;
 	margin-bottom: 10px;
+	overflow: hidden;
 	ul {
 		margin: 0 auto;
 		padding: 0;
+		position: relative;
+		top: -100px;
+		opacity: 0;
 	}
 	li {
 		@include fontStackLight;
@@ -115,6 +120,8 @@ object.brain {
 	}
 }
 
+
+
 object.heart:before,
 object.heart:after {
 	content: "";
@@ -126,22 +133,9 @@ object.heart:after {
 }
 
 object.heart:after {
-	// content: "";
-	// position: absolute;
-	// top: 50%;
-	// width: 117%;
-	// height: 1px;
-	// border-top: 1px solid lighten($heart,9);
-	right: 100%;
-	
+	right: 100%;	
 }
 object.heart:before {
-	// content: "";
-	// position: absolute;
-	// top: 50%;
-	// width: 117%;
-	// height: 1px;
-	// border-top: 1px solid lighten($heart,9);
 	left: 100%;
 }
 object.learn:before,
@@ -176,71 +170,3 @@ object.brain:before{
 object.brain:after{
 	right: 100%;
 }
-
-// ---------------
-
-// nav {
-// 	@include fontStackReg;
-
-// 	ul {
-// 		text-align: center;
-// 		padding: 0;
-// 	}
-// 	li {
-// 		@include navLists;
-// 		&:hover {
-// 			cursor: pointer;
-// 		}
-// 	}
-// 	li:hover,
-// 	li.open {
-// 		color: $link;
-// 	}
-// 	li.open {
-// 		cursor: default;
-// 	}
-// 	li:first-child {
-// 		margin-right: 130px;
-// 		padding-left: 18px;
-// 	}
-// 	li:last-child {
-// 		margin-left: 130px;
-// 	}
-// 	li.portfolio:before {
-// 		content: "";
-// 		position: absolute;
-// 		top: 50%;
-// 		width: 180%;
-// 		height: 1px;
-// 		border-top: 1px solid lighten($nav,9);
-// 		right: 100%;
-// 	}
-// 	li.about:before,
-// 	li.about:after {
-// 		content: "";
-// 		position: absolute;
-// 		top: 50%;
-// 		width: 250%;
-// 		height: 1px;
-// 		border-top: 1px solid lighten($nav,9);
-// 	}
-// 	li.about:before {
-// 		right: 100%;
-// 		margin-right: 15px;
-// 	}
-// 	li.about:after {
-// 		left: 100%;
-// 		margin-left: 15px;
-// 	}
-// 	li.contact:after {
-// 		content: "";
-// 		position: absolute;
-// 		top: 50%;
-// 		width: 250%;
-// 		height: 0;
-// 		border-top: 1px solid lighten($nav,9);
-// 		left: 100%;
-// 		margin-left: 15px;
-// 	}
-
-// }

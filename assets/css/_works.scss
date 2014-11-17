@@ -23,13 +23,17 @@ $buttonHeight: 70px;
 	margin-bottom: 100px;
 	text-align: center;
 	position: relative;
-	top: -80px;
-	opacity: 0;
+	// top: -80px;
+	opacity: 0.3;
+	a {
+		text-decoration: none;
+
+	}
 	h3 {
 		@include fontStackReg;
 		font-size: $fontSize*1.2;
 		color: $mainHeader;
-
+		
 	}
 	h4 {
 		font-size: $fontSize*0.9;
@@ -54,7 +58,7 @@ $buttonHeight: 70px;
 	
 }
 .thumb {
-	width: 200px;
+	width: $w;
 	margin: 0 auto 50px;
 	text-align: center;
 	display: block;
@@ -123,8 +127,10 @@ div.projectDetails {
 		margin-bottom: 15px;
 		position: relative;
 		width: auto;
+
 		img {
-			border: 5px solid lighten($nav,30);
+			border-radius: 6px;
+			border: 3px solid lighten($nav,30);
 		}
 		
 	}
